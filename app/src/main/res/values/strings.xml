@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LawPavillion Android Assessment</string>
+    <string name="search_cases_and_files">Search cases and files</string>
+    <string name="search">Search</string>
+    <string name="history">History</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="latest_judgements">Latest Judgements</string>
+    <string name="law_reports">Law Reports</string>
+    <string name="laws_of_nigeria">Laws of Nigeria</string>
+    <string name="civil_procedure_rules">Civil Procedure Rules</string>
+    <string name="index_digest"><![CDATA[Index & Digest]]></string>
+    <string name="textbooks_journals"><![CDATA[Textbooks & Journals]]></string>
+    <string name="my_research_folder">My Research Folder</string>
+    <string name="words_in_gold">Words in gold</string>
+    <string name="new_contents">New Contents</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="latest_judgement_overview">Latest Judgement Overview</string>
+    <string name="supreme_court">Supreme Court</string>
+    <string name="court_of_appeal">Court of Appeal</string>
+    <string name="delivered_on_20_10_2019">Delivered on 20-10-2019</string>
+    <string name="mailantarki_v_tongo">Mailantarki v. Tongo</string>
+    <string name="_2019_lpelr_42466_sc">(2019) LPELR - 42466 (SC)</string>
+</resources>

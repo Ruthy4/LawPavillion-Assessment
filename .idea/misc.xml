@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.137890625" />
+        <entry key="app/src/main/res/drawable/ic_prime.xml" value="0.137890625" />
+        <entry key="app/src/main/res/drawable/ic_profile_image.xml" value="0.137890625" />
+        <entry key="app/src/main/res/drawable/ic_selected_folder_bg.xml" value="0.137890625" />
+        <entry key="app/src/main/res/drawable/tool_bar_title_bg.xml" value="0.2328125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/app_bar_dashboard.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/content_dashboard.xml" value="0.205" />
+        <entry key="app/src/main/res/layout/drawer_header.xml" value="0.220703125" />
+        <entry key="app/src/main/res/layout/fragment_latest_judgements.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/supreme_court_recycler_view_item.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/main_activity_drawer.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.18" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

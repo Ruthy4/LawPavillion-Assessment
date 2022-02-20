@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="@dimen/margin_30dp"
+    android:layout_marginBottom="@dimen/margin_30dp"
+    android:background="@drawable/ic_unselected_folder">
+
+    <TextView
+        android:id="@+id/delivery_date_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_43dp"
+        android:text="@string/delivered_on_20_10_2019"
+        android:textColor="@color/ash"
+        android:textSize="@dimen/text_size_9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/margin_33dp"
+        android:layout_marginEnd="@dimen/margin_18dp"
+        android:src="@drawable/logo_shirt"
+        app:layout_constraintBottom_toBottomOf="@+id/delivery_date_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/delivery_date_textView"
+        app:layout_constraintTop_toTopOf="@id/delivery_date_textView" />
+
+    <TextView
+        android:id="@+id/folder_title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mailantarki_v_tongo"
+        android:textSize="@dimen/text_size_20sp"
+        android:fontFamily="@font/work_sans"
+        android:textColor="@color/chinese_black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_23dp"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        app:layout_constraintTop_toBottomOf="@id/delivery_date_textView"
+        android:layout_marginTop="@dimen/margin_21dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2019_lpelr_42466_sc"
+        android:textSize="@dimen/text_size_9sp"
+        android:fontFamily="@font/work_sans"
+        android:textColor="@color/ash"
+        app:layout_constraintTop_toBottomOf="@id/folder_title_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/margin_38dp"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        android:layout_marginStart="@dimen/margin_23dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
