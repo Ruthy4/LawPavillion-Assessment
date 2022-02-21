@@ -29,4 +29,8 @@
     <dimen name="margin_30dp">30dp</dimen>
     <dimen name="margin_38dp">38dp</dimen>
     <dimen name="margin_44dp">44dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="padding_25dp">25dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="margin_13dp">13dp</dimen>
 </resources>

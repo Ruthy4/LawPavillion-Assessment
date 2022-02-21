@@ -15,7 +15,7 @@
     <string name="new_contents">New Contents</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="latest_judgement_overview">Latest Judgement Overview</string>
+    <string name="latest_judgements_overview">Latest Judgements Overview</string>
     <string name="supreme_court">Supreme Court</string>
     <string name="court_of_appeal">Court of Appeal</string>
     <string name="delivered_on_20_10_2019">Delivered on 20-10-2019</string>
