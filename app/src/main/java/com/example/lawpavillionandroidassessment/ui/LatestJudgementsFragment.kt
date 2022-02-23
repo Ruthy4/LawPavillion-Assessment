@@ -1,14 +1,19 @@
-package com.example.lawpavillionandroidassessment
+package com.example.lawpavillionandroidassessment.ui
 
-import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lawpavillionandroidassessment.R
 import com.example.lawpavillionandroidassessment.databinding.FragmentLatestJudgementsBinding
 import com.example.lawpavillionandroidassessment.ui.adapter.SupremeCourtAdapter
 import com.example.lawpavillionandroidassessment.utils.SupremeCourtList
@@ -35,25 +40,44 @@ class LatestJudgementsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         supremeCourtRecyclerView = binding.supremeCourtRecyclerView
-        supremeCourtAdapter = SupremeCourtAdapter()
-        supremeCourtRecyclerView.adapter = supremeCourtAdapter
-        supremeCourtAdapter.submitList(SupremeCourtList.supremeCourtList)
+        supremeCourtAdapter = SupremeCourtAdapter() { supremeCourt ->
 
-        binding.supremeCourtLayout.setOnClickListener {
-            toggleOnSpecificLayout(it, binding.supremeCourtTextView)
+            activity?.supportFragmentManager?.commit {
+                replace<SupremeCourtFolderFragment>(R.id.child_fragment_container)
+                setReorderingAllowed(true)
+            }
+
         }
+        supremeCourtRecyclerView.adapter = supremeCourtAdapter
+        supremeCourtRecyclerView.layoutManager = GridLayoutManager(requireContext(), 4, GridLayoutManager.VERTICAL, false)
+        supremeCourtAdapter.setData(SupremeCourtList.supremeCourtList)
 
-        binding.courtOfAppealLayout.setOnClickListener {
-            toggleOnSpecificLayout(it, binding.courtOfAppealTextView)
+        toggleOnSpecificLayout(binding.supremeCourtLayout, binding.supremeCourtTextView)
+
+        binding.apply {
+            supremeCourtLayout.setOnClickListener {
+                toggleOnSpecificLayout(it, binding.supremeCourtTextView)
+            }
+            courtOfAppealLayout.setOnClickListener {
+                toggleOnSpecificLayout(it, binding.courtOfAppealTextView)
+            }
         }
     }
 
     fun toggleOffAllLayout() {
         binding.apply {
-            setViewBackgroundColor(supremeCourtLayout, R.color.lotion, requireContext(),R.color.lotion,0 )
-            setViewBackgroundColor(courtOfAppealLayout, R.color.lotion, requireContext(), R.color.lotion, 0)
-            supremeCourtTextView.setTextColor(ContextCompat.getColor(requireContext(), R.color.cadet_grey))
-            courtOfAppealTextView.setTextColor(ContextCompat.getColor(requireContext(), R.color.cadet_grey))
+            setViewBackgroundColor(supremeCourtLayout,
+                R.color.lotion, requireContext(),
+                R.color.lotion,0 )
+            setViewBackgroundColor(courtOfAppealLayout,
+                R.color.lotion, requireContext(),
+                R.color.lotion, 0)
+            supremeCourtTextView.setTextColor(ContextCompat.getColor(requireContext(),
+                R.color.cadet_grey
+            ))
+            courtOfAppealTextView.setTextColor(ContextCompat.getColor(requireContext(),
+                R.color.cadet_grey
+            ))
         }
     }
 
@@ -66,6 +90,7 @@ class LatestJudgementsFragment : Fragment() {
         textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.nickel))
         setViewBackgroundColor(backgroundView, R.color.white, requireContext(), R.color.platinum, 1)
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

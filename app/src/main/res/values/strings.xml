@@ -13,7 +13,6 @@
     <string name="my_research_folder">My Research Folder</string>
     <string name="words_in_gold">Words in gold</string>
     <string name="new_contents">New Contents</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="latest_judgements_overview">Latest Judgements Overview</string>
     <string name="supreme_court">Supreme Court</string>
@@ -21,4 +20,20 @@
     <string name="delivered_on_20_10_2019">Delivered on 20-10-2019</string>
     <string name="mailantarki_v_tongo">Mailantarki v. Tongo</string>
     <string name="_2019_lpelr_42466_sc">(2019) LPELR - 42466 (SC)</string>
+    <string name="_2">2</string>
+    <string name="close">close</string>
+    <string name="essien_amp_nor_v_mohammed_2005_ca"><![CDATA[ESSIEN & NOR V. MOHAMMED (2005, CA)]]></string>
+    <string name="principle">Principle</string>
+    <string name="_2020_lpelr_50514_ca">(2020) LPELR-50514(CA)</string>
+    <string name="judgement_summary">APPEAL- FORMULATION OF ISSUE(S) FOR DETERMINATION - Whether Court can suo motu formulate/reformulate issue(s)
+        arising from ground(s) of appeal for determination of an appeal for determination of an appeal</string>
+    <string name="view_summary">View Summary</string>
+    <string name="full_judgement">\"In Chabasaya vs. Anwasi (2010) 10 NWLR (1201) 163 it was held by the Supreme Court that: - \"…
+        The law permits an appellate Court to ignore some or all issues in the briefs of argument and formulate its own issues,
+        the way it deems them to be material once they are distilled from the grounds of appeal.\" In the earlier case of Sha vs. Kwan (2000) 8 NWLR (670) 685 @ 700, the apex Court had stated that:- \"The Court of Appeal is at liberty and possess the jurisdiction to modify or reject all or any of the issues formulated by the parties and frame its own issues or, to reframe the issues by the parties if, in its views, such issues will not lead
+        to proper determination of the appeal.\" \"The Court of Appeal is at liberty and possess such issues will not lead to proper determination
+        of the appeal.
+        \"See also Onochie vs. Odogwu (2006) 6 NWLR (975) 65, Governor Ekiti State vs. Olubunmo (2017) 3 NWLR (1551) 1 @ 23.\" Per GARBA ,J.C.A ( Pp. 4-5, paras. F-D )
+    </string>
+    <string name="read_full_judgement">Read Full Judgement</string>
 </resources>

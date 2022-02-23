@@ -10,7 +10,7 @@
             android:title="@string/dashboard" />
 
         <item
-            android:id="@+id/latest_judgements"
+            android:id="@+id/latestJudgementsFragment"
             android:icon="@drawable/ic_latest_judgement"
             android:title="@string/latest_judgements" />
 

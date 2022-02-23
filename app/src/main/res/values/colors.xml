@@ -20,4 +20,8 @@
     <color name="ash">#272727</color>
     <color name="chinese_black">#171717</color>
     <color name="platinum">#DDE3E7</color>
+    <color name="indigo">#262C60</color>
+    <color name="mint_green">#E8F7EC</color>
+    <color name="red">#D40000</color>
+    <color name="green">#468A03</color>
 </resources>

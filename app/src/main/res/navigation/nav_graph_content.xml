@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_content"
+    app:startDestination="@id/supremeCourtFolderFragment2">
+
+    <fragment
+        android:id="@+id/supremeCourtFolderFragment2"
+        android:name="com.example.lawpavillionandroidassessment.ui.SupremeCourtFolderFragment"
+        android:label="SupremeCourtFolderFragment"
+        tools:layout="@layout/fragment_supreme_court_folder"/>
+</navigation>

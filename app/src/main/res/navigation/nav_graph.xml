@@ -6,7 +6,12 @@
     app:startDestination="@id/latestJudgementsFragment">
     <fragment
         android:id="@+id/latestJudgementsFragment"
-        android:name="com.example.lawpavillionandroidassessment.LatestJudgementsFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.LatestJudgementsFragment"
         android:label="LatestJudgementsFragment"
         tools:layout="@layout/fragment_latest_judgements"/>
+    <fragment
+        android:id="@+id/supremeCourtFolderFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.SupremeCourtFolderFragment"
+        android:label="fragment_supreme_court_folder"
+        tools:layout="@layout/fragment_supreme_court_folder" />
 </navigation>
