@@ -5,7 +5,7 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/dashboard"
+            android:id="@+id/dashboardFragment"
             android:icon="@drawable/ic_dashboard"
             android:title="@string/dashboard" />
 
@@ -15,42 +15,42 @@
             android:title="@string/latest_judgements" />
 
         <item
-            android:id="@+id/law_reports"
+            android:id="@+id/lawReportsFragment"
             android:icon="@drawable/ic_law_reports"
             android:title="@string/law_reports" />
 
         <item
-            android:id="@+id/laws_of_nigeria"
+            android:id="@+id/lawsOfNigeriaFragment"
             android:icon="@drawable/ic_laws_of_nigeria"
             android:title="@string/laws_of_nigeria" />
 
         <item
-            android:id="@+id/civil_procedure_rules"
+            android:id="@+id/civilProcedureRulesFragment"
             android:icon="@drawable/ic_hamburger"
             android:title="@string/civil_procedure_rules" />
 
         <item
-            android:id="@+id/index_and_digest"
+            android:id="@+id/indexAndDigestFragment"
             android:icon="@drawable/ic_index_and_digest"
             android:title="@string/index_digest" />
 
         <item
-            android:id="@+id/textbooks_journals"
+            android:id="@+id/textBooksAndJournalsFragment"
             android:icon="@drawable/ic_textbooks_journals"
             android:title="@string/textbooks_journals" />
 
         <item
-            android:id="@+id/my_research_folder"
+            android:id="@+id/myResearchFolderFragment"
             android:icon="@drawable/ic_my_research_folder"
             android:title="@string/my_research_folder" />
 
         <item
-            android:id="@+id/words_in_gold"
+            android:id="@+id/wordsInGoldFragment"
             android:icon="@drawable/ic_words_in_gold"
             android:title="@string/words_in_gold" />
 
         <item
-            android:id="@+id/new_contents"
+            android:id="@+id/newContentsFragment"
             android:icon="@drawable/ic_new_contents"
             android:title="@string/new_contents" />
 

@@ -1,4 +1,4 @@
-package com.example.lawpavillionandroidassessment.ui
+package com.example.lawpavillionandroidassessment.ui.latestjudgements
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.method.LinkMovementMethod
 import android.text.style.ForegroundColorSpan
+import android.text.style.StyleSpan
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,10 +16,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import com.example.lawpavillionandroidassessment.R
 import com.example.lawpavillionandroidassessment.databinding.FragmentSupremeCourtFolderBinding
-import com.example.lawpavillionandroidassessment.utils.CustomTypefaceSpan
-import com.example.lawpavillionandroidassessment.utils.ViewCallback
-import com.example.lawpavillionandroidassessment.utils.setViewBackgroundColor
-import com.example.lawpavillionandroidassessment.utils.toggleViewBackground
+import com.example.lawpavillionandroidassessment.utils.*
 
 class SupremeCourtFolderFragment : Fragment() {
     private var _binding: FragmentSupremeCourtFolderBinding? = null
@@ -36,35 +34,48 @@ class SupremeCourtFolderFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         newUserSignUpForFreeSpannable()
-        toggleOnSpecificLayout(binding.readFullSummaryTextView, binding.readFullSummaryTextView)
 
-        binding.viewSummaryTextView.setOnClickListener {
-            binding.fullJudgementTextView.visibility =View.GONE
-            toggleOnSpecificLayout(it, binding.viewSummaryTextView)
+
+        binding.apply {
+            viewSummaryTextView.setOnClickListener {
+                fullJudgementTextView.hideView()
+                toggleOnSpecificLayout(it, viewSummaryTextView)
+            }
+            readFullSummaryTextView.setOnClickListener {
+                fullJudgementTextView.showView()
+                toggleOnSpecificLayout(it, readFullSummaryTextView)
+            }
+            toggleOnSpecificLayout(readFullSummaryTextView, readFullSummaryTextView)
+
         }
+        binding.closeButton.setOnClickListener {
 
-        binding.readFullSummaryTextView.setOnClickListener {
-            binding.fullJudgementTextView.visibility =View.VISIBLE
-            toggleOnSpecificLayout(it, binding.readFullSummaryTextView)
         }
     }
 
 
     private fun newUserSignUpForFreeSpannable() {
-        val message = getString(R.string.judgement_summary)
-        val spannable = SpannableStringBuilder(message)
+        val messageTitle = getString(R.string.judgement_summary)
+        val messageBody = getString(R.string.full_judgement)
+        val spannableTitle = SpannableStringBuilder(messageTitle)
+        val spannableBody = SpannableStringBuilder(messageBody)
         val myTypeface = Typeface.create(ResourcesCompat.getFont(requireContext(), R.font.work_sans), Typeface.BOLD)
-        spannable.setSpan(CustomTypefaceSpan(myTypeface), 0, 7, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
-        spannable.setSpan(ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.deep_purple)), 0, 7, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        spannableTitle.setSpan(CustomTypefaceSpan(myTypeface), 0, 7, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        spannableTitle.setSpan(ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.deep_purple)), 0, 7, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
 
-        spannable.setSpan(CustomTypefaceSpan(myTypeface), 8, 51, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
-        spannable.setSpan(ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.red)), 8, 51, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        spannableTitle.setSpan(CustomTypefaceSpan(myTypeface), 8, 51, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        spannableTitle.setSpan(ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.red)), 8, 51, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
 
-        spannable.setSpan(CustomTypefaceSpan(myTypeface), 50, message.length, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
-        spannable.setSpan(ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.green)), 50, message.length, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        spannableTitle.setSpan(CustomTypefaceSpan(myTypeface), 50, messageTitle.length, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        spannableTitle.setSpan(ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.green)), 50, messageTitle.length, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        spannableBody.setSpan(StyleSpan(Typeface.BOLD), 200, messageBody.length, Spannable.SPAN_INCLUSIVE_INCLUSIVE)
+        spannableBody.setSpan(ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.red)), 200, messageBody.length,  Spannable.SPAN_INCLUSIVE_INCLUSIVE)
 
-        binding.judgementSummaryTextView.text = spannable
-        binding.judgementSummaryTextView.movementMethod = LinkMovementMethod.getInstance()
+
+        binding.apply {
+            judgementSummaryTextView.text = spannableTitle
+            judgementSummaryTextView.movementMethod = LinkMovementMethod.getInstance()
+        }
     }
 
     fun toggleOffAllLayout() {
@@ -96,7 +107,6 @@ class SupremeCourtFolderFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-
         _binding = null
     }
 

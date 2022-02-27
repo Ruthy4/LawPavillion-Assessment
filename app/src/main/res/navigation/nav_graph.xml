@@ -3,15 +3,62 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/latestJudgementsFragment">
+    app:startDestination="@id/dashboardFragment">
     <fragment
         android:id="@+id/latestJudgementsFragment"
-        android:name="com.example.lawpavillionandroidassessment.ui.LatestJudgementsFragment"
-        android:label="LatestJudgementsFragment"
-        tools:layout="@layout/fragment_latest_judgements"/>
+        android:name="com.example.lawpavillionandroidassessment.ui.latestjudgements.LatestJudgementsFragment"
+        android:label="LatestJudgementsFragment" />
     <fragment
         android:id="@+id/supremeCourtFolderFragment"
-        android:name="com.example.lawpavillionandroidassessment.ui.SupremeCourtFolderFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.latestjudgements.SupremeCourtFolderFragment"
         android:label="fragment_supreme_court_folder"
         tools:layout="@layout/fragment_supreme_court_folder" />
+    <fragment
+        android:id="@+id/courtOfAppealFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.latestjudgements.CourtOfAppealFragment"
+        android:label="fragment_court_of_appeal"
+        tools:layout="@layout/fragment_court_of_appeal" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.dashboard.DashboardFragment"
+        android:label="fragment_dashboard" />
+    <fragment
+        android:id="@+id/lawReportsFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.lawreports.LawReportsFragment"
+        android:label="fragment_law_reports"
+        tools:layout="@layout/fragment_law_reports" />
+    <fragment
+        android:id="@+id/lawsOfNigeriaFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.lawsofnigeria.LawsOfNigeriaFragment"
+        android:label="fragment_laws_of_nigeria"
+        tools:layout="@layout/fragment_laws_of_nigeria" />
+    <fragment
+        android:id="@+id/civilProcedureRulesFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.civilprocedurerules.CivilProcedureRulesFragment"
+        android:label="fragment_civil_procedure_rules2"
+        tools:layout="@layout/fragement_index_and_digest" />
+    <fragment
+        android:id="@+id/indexAndDigestFragment"
+        android:name="com.example.lawpavillionandroidassessment.IndexAndDigestFragment"
+        android:label="IndexAndDigestFragment" />
+    <fragment
+        android:id="@+id/myResearchFolderFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.myresearchfolder.MyResearchFolderFragment"
+        android:label="fragment_my_research_folder"
+        tools:layout="@layout/fragment_my_research_folder" />
+    <fragment
+        android:id="@+id/newContentsFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.newcontents.NewContentsFragment"
+        android:label="fragment_new_contents"
+        tools:layout="@layout/fragment_new_contents" />
+    <fragment
+        android:id="@+id/wordsInGoldFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.wordsingold.WordsInGoldFragment"
+        android:label="fragment_words_in_gold"
+        tools:layout="@layout/fragment_words_in_gold" />
+    <fragment
+        android:id="@+id/textBooksAndJournalsFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.textbooksandjournals.TextBooksAndJournalsFragment"
+        android:label="fragment_text_books_and_journals"
+        tools:layout="@layout/fragment_text_books_and_journals" />
 </navigation>

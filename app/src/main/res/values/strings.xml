@@ -3,11 +3,7 @@
     <string name="search_cases_and_files">Search cases and files</string>
     <string name="search">Search</string>
     <string name="history">History</string>
-    <string name="dashboard">Dashboard</string>
     <string name="latest_judgements">Latest Judgements</string>
-    <string name="law_reports">Law Reports</string>
-    <string name="laws_of_nigeria">Laws of Nigeria</string>
-    <string name="civil_procedure_rules">Civil Procedure Rules</string>
     <string name="index_digest"><![CDATA[Index & Digest]]></string>
     <string name="textbooks_journals"><![CDATA[Textbooks & Journals]]></string>
     <string name="my_research_folder">My Research Folder</string>
@@ -36,4 +32,9 @@
         \"See also Onochie vs. Odogwu (2006) 6 NWLR (975) 65, Governor Ekiti State vs. Olubunmo (2017) 3 NWLR (1551) 1 @ 23.\" Per GARBA ,J.C.A ( Pp. 4-5, paras. F-D )
     </string>
     <string name="read_full_judgement">Read Full Judgement</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="index_and_digest">Index and Digest</string>
+    <string name="law_reports">Law Reports</string>
+    <string name="laws_of_nigeria">Laws of Nigeria</string>
+    <string name="civil_procedure_rules">Civil Procedure Rules</string>
 </resources>
