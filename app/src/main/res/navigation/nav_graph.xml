@@ -39,7 +39,7 @@
         tools:layout="@layout/fragement_index_and_digest" />
     <fragment
         android:id="@+id/indexAndDigestFragment"
-        android:name="com.example.lawpavillionandroidassessment.IndexAndDigestFragment"
+        android:name="com.example.lawpavillionandroidassessment.ui.indexanddigest.IndexAndDigestFragment"
         android:label="IndexAndDigestFragment" />
     <fragment
         android:id="@+id/myResearchFolderFragment"
